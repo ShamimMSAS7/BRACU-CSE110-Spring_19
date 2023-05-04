@@ -1,0 +1,8 @@
+public class L7T1a{
+  public static void main(String[]args){
+    int i;
+    for(i=24; i>=-6; i=i-6)
+      System.out.print(i+", ");
+    System.out.println(i);
+  }
+}

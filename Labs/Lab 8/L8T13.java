@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class L8T13{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int array[]=new int[10];
+    int sumEven=0,sumOdd=0, sumDiv5=0;
+    System.out.println("Enter 10 numbers");
+    for(int i=0; i<array.length; i++){
+      array[i]=sc.nextInt();
+      if(array[i]%2==0)
+        sumEven+=array[i];
+      else
+        sumOdd+=array[i];
+      if(array[i]%5==0)
+        sumDiv5+=array[i];
+      
+    }
+    System.out.println(sumEven);
+    System.out.println(sumOdd);
+    System.out.println(sumDiv5);
+  }
+}

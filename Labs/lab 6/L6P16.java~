@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class L6P16{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the number of row");
+    int row=sc.nextInt();
+    
+    int c=1;
+    while(c<=row){
+      int i=1;
+      while(i<c){
+        if(c==1 || c==row){
+          System.out.print("*");
+        }else{
+          if(i==1){
+            System.out.print("*");
+          }else{
+            System.out.print(" ");
+          }
+        }
+        i++;
+      }
+    System.out.println("*");
+    c++;
+    }
+    sc.close();
+  }
+  
+}  
